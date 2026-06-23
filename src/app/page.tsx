@@ -28,7 +28,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search colleges, courses, locations..."
-              className="flex-1 px-4 py-3 rounded-md text-gray-800 focus:outline-none"
+              className="flex-1 px-4 py-3 rounded-md text-gray-800 focus:outline-none placeholder-gray-500"
             />
             <Link href="/colleges" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md font-medium transition">
               Search

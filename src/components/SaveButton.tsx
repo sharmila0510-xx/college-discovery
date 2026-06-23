@@ -33,7 +33,7 @@ export default function SaveButton({ collegeId }: { collegeId: string }) {
       disabled={loading}
       className={`px-6 py-2 rounded-lg transition border ${saved ? 'bg-green-50 border-green-600 text-green-600' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}
     >
-      {loading ? 'Saving...' : saved ? '✅ Saved!' : 'Save College'}
+      {loading ? 'Saving...' : saved ? 'Saved!' : 'Save College'}
     </button>
   )
 }
