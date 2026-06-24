@@ -83,7 +83,7 @@ export default async function CollegeDetailPage({
           <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
             <h2 className="text-xl font-bold text-gray-800 mb-4">Courses Offered</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {college.courses.map((course) => (
+              {college.courses.map((course: { id: string; name: string; duration: string; fees: number }) => (
                 <div key={course.id} className="border border-gray-100 rounded-lg p-4">
                   <h3 className="font-semibold text-gray-800">{course.name}</h3>
                   <p className="text-gray-500 text-sm">Duration: {course.duration}</p>
