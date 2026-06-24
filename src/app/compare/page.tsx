@@ -12,8 +12,8 @@ export default async function ComparePage({
     orderBy: { ranking: 'asc' },
   })
 
-  const c1 = college1 ? allColleges.find((c) => c.id === college1) : null
-  const c2 = college2 ? allColleges.find((c) => c.id === college2) : null
+ const c1 = college1 ? allColleges.find((c: any) => c.id === college1) : null
+const c2 = college2 ? allColleges.find((c: any) => c.id === college2) : null
 
   const fields = [
     { label: 'Location', key: 'location' },
