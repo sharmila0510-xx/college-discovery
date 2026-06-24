@@ -70,7 +70,7 @@ export default async function CollegesPage({
 
         {/* College Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {colleges.map((college) => (
+          {colleges.map((college: any) => (
             <Link href={`/colleges/${college.id}`} key={college.id}>
               <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition cursor-pointer border border-gray-100">
                 <div className="flex justify-between items-start mb-3">
